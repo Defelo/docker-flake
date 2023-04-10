@@ -1,0 +1,43 @@
+name: Update flake
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+  push:
+    paths-ignore: [flake.nix]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    name: update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Login to GHCR
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: defelo
+          password: ${{ secrets.GHCR_TOKEN }}
+      - name: Update flake
+        run: |
+          set -ex
+
+          echo -e '{\n  outputs = {...}: {\n    images = {' > flake.nix
+          cat config.yml | while read line; do
+            k=$(cut -d: -f1 <<< "$line" | xargs)
+            v=$(cut -d: -f2- <<< "$line" | xargs)
+            value=$(skopeo inspect --format "{{.Name}}@{{.Digest}}" "docker://$v")
+            echo "      \"$k\" = \"$value\";" >> flake.nix
+          done
+          echo -e '    };\n  };\n}' >> flake.nix
+
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          if git commit -m "Update flake"; then
+            git push
+          fi
