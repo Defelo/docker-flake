@@ -1,7 +1,7 @@
 {
   outputs = {...}: {
     images = {
-      "sandkasten" = "ghcr.io/defelo/sandkasten@sha256:810fca45b427fb664291575b11ba4b86521e21201374d43f410b90ec512c40c7";
+      "sandkasten" = "ghcr.io/defelo/sandkasten@sha256:c659c21049b969b4bb955d44038c6ebafaf1e780c25008723964755451aa237d";
     };
   };
 }
