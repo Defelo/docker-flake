@@ -1,10 +1,10 @@
 {
   outputs = {...}: {
     images = {
-      "sandkasten" = "ghcr.io/defelo/sandkasten@sha256:2a0a79c7507d913ef69c91a851c2375713a97174c9108b68fb4a30304aa9a390";
-      "nginx-keycloak" = "ghcr.io/defelo/nginx-keycloak@sha256:94e413ef1e352b787cd09abfd739889c26c8744574ab388db50a782d5cd17e28";
-      "docker-healthchecks" = "ghcr.io/defelo/docker-healthchecks@sha256:b6e489c643fd607775050f421287215b6ef75779be9003c950b465057557482d";
-      "distodon" = "ghcr.io/defelo/distodon@sha256:26a460da28a3400f577d5dbc894b4f655df41b9a0b949a4295372642f7700f27";
+      "nginx-keycloak" = "ghcr.io/defelo/nginx-keycloak@sha256:0e3b13917fadc2db914879d951d9fe0811c1fb2bdf5da6991a0f94424a866bd2";
+      "docker-healthchecks" = "ghcr.io/defelo/docker-healthchecks@sha256:22794e9fc2758092e9b2b79b39934f3098befaee7ee2c00552aa9814af7b34b1";
+      "distodon" = "ghcr.io/defelo/distodon@sha256:a0bff7e491eb64cb4c7f8daf204aa99329fd38414d12829f69832eea62d2bedb";
+      "echoip" = "docker.io/mpolden/echoip@sha256:23eaa7ac21945854483d44cff84d34ea8f477f3dbe509b4bf90ab671f09aaf14";
     };
   };
 }
