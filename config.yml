@@ -1,4 +1,4 @@
-sandkasten: ghcr.io/defelo/sandkasten:develop
 nginx-keycloak: ghcr.io/defelo/nginx-keycloak
 docker-healthchecks: ghcr.io/defelo/docker-healthchecks
 distodon: ghcr.io/defelo/distodon
+echoip: mpolden/echoip
