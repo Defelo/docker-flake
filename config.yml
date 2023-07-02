@@ -2,3 +2,7 @@ nginx-keycloak: ghcr.io/defelo/nginx-keycloak
 docker-healthchecks: ghcr.io/defelo/docker-healthchecks
 distodon: ghcr.io/defelo/distodon
 echoip: mpolden/echoip
+jitsi_web: jitsi/web:stable
+jitsi_prosody: jitsi/prosody:stable
+jitsi_jicofo: jitsi/jicofo:stable
+jitsi_jvb: jitsi/jvb:stable
