@@ -41,3 +41,5 @@ jobs:
           if git commit -m "Update flake"; then
             git push
           fi
+
+          curl -f -s -o /dev/null ${{ secrets.HC_URL }}
