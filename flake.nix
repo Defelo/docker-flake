@@ -9,6 +9,7 @@
       "jitsi_prosody" = "docker.io/jitsi/prosody@sha256:86d4f1f9b18be0c92fd97b335b64ad5b20420002b91f126e52bd1c63df070939";
       "jitsi_jicofo" = "docker.io/jitsi/jicofo@sha256:a1765adfe338e61430876d7d97dd2f630e39c2402028866e09a56d01598416c5";
       "jitsi_jvb" = "docker.io/jitsi/jvb@sha256:b7e128730c21c4898eb80cbcf447b9068a7b65631f629a2817af09314b3cfa93";
+      "jitsi_keycloak" = "ghcr.io/d3473r/jitsi-keycloak@sha256:80cfb9bf51e5621687e07cf1bc64bc75c113b548f1127e8f01bd3f96b8d2f141";
     };
   };
 }
