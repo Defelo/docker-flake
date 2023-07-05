@@ -7,3 +7,4 @@ jitsi_prosody: jitsi/prosody:stable
 jitsi_jicofo: jitsi/jicofo:stable
 jitsi_jvb: jitsi/jvb:stable
 jitsi_keycloak: ghcr.io/d3473r/jitsi-keycloak:main
+ntfy-sh: binwiederhier/ntfy
