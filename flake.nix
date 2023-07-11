@@ -3,7 +3,7 @@
     images = {
       "nginx-keycloak" = "ghcr.io/defelo/nginx-keycloak@sha256:c37c1ef1a33659d9853c323ad23832c1ca088205e86af554a0b9868e6ab472ae";
       "docker-healthchecks" = "ghcr.io/defelo/docker-healthchecks@sha256:55d10e07855a80f1b9a5bba4a4ae1c342242b3f7bbbe6df2670f88455c32303a";
-      "distodon" = "ghcr.io/defelo/distodon@sha256:1f79bdc70058f592d00a88c8fb3ab7d1f54899d312b3be437f8533dc1fc0d2b6";
+      "distodon" = "ghcr.io/defelo/distodon@sha256:5aeed04f00a998c6cc30cc6874321504cc5eadc84648c40506eca7a873c06302";
       "echoip" = "docker.io/mpolden/echoip@sha256:23eaa7ac21945854483d44cff84d34ea8f477f3dbe509b4bf90ab671f09aaf14";
       "jitsi_web" = "docker.io/jitsi/web@sha256:323dc79486d6eb599d53ee9c7f4fb6d6e411c193d35fd24c07bd5972518ba89e";
       "jitsi_prosody" = "docker.io/jitsi/prosody@sha256:86d4f1f9b18be0c92fd97b335b64ad5b20420002b91f126e52bd1c63df070939";
